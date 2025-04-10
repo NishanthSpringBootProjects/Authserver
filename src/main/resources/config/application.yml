@@ -1,0 +1,23 @@
+server:
+    port: 2025
+#database configuration
+spring:
+    application:
+        name: AuthserverApplication
+    datasource:
+        url: jdbc:mysql://localhost:3306/Authserver	
+        password: 1234
+        username: root
+        driver-class-name: com.mysql.cj.jdbc.Driver
+#hibernate configuration
+    jpa:
+      database-platform: org.hibernate.dialect.MySQL8Dialect
+      hibernate:
+        ddl-auto: update
+#This is a default username and password
+#    security:
+#      user:
+#        name: nishanth
+#        password: 1234
+
+       
